@@ -75,6 +75,10 @@ body {
 	background-color: #fbe6e4;
 }
 
+.card__contact-me {
+	background-color: #fef9df;
+}
+
 .btn {
 	background-color: #101011;
 	color: #fff;
@@ -105,4 +109,90 @@ ul {
 .fa-camera {
 	color: #78d1af;
 	margin-right: 10px;
+}
+
+.fa-square-instagram,
+.fa-telegram,
+.fa-linkedin {
+	color: #9b0b0b;
+}
+
+.form {
+	margin-top: 1em;
+}
+
+.first-row input {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	height: 31px;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #101011;
+	background-color: transparent;
+}
+
+.first-row > div > label {
+	display: block;
+	margin-bottom: 12px;
+}
+
+.first-row div {
+	width: 48%;
+}
+
+.first-row {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+.second-row {
+	margin-bottom: 12px;
+}
+
+.second-row label {
+	display: block;
+	margin-bottom: 12px;
+}
+
+.second-row textarea {
+	display: block;
+	width: 100%;
+	height: 100px;
+	border: none;
+	border-bottom: 1px solid #101011;
+	outline: none;
+	background-color: transparent;
+}
+
+input,
+textarea {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #0f141e;
+}
+
+@media (max-width: 650px) {
+	.info {
+		flex-direction: column;
+	}
+
+	.info .about {
+		text-align: center;
+	}
+
+	.first-row {
+		display: block;
+	}
+
+	.first-row div:first-child {
+		margin-bottom: 12px;
+	}
+
+	.first-row div {
+		width: 100%;
+	}
 }
