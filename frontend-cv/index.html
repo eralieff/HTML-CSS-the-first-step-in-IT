@@ -11,103 +11,131 @@
 			name="keywords"
 			content="Front-End Разработчик, Резюме, HTML5, CSS3, JavaScript, Vue, Веб-разработка"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="style.css" />
 		<title>Резюме Front-End Разработчика | Берік Ералиев</title>
 	</head>
 	<body>
-		<img src="images/my_photo.jpg" alt="Фотография Берік Ералиев" width="200" />
+		<div class="container">
+			<div class="info">
+				<div class="image">
+					<img
+						src="images/my_photo.jpg"
+						alt="Фотография Берік Ералиев"
+						class="avatar"
+					/>
+				</div>
+				<div class="about">
+					<h1>Берік Ералиев</h1>
 
-		<h1>Берік Ералиев</h1>
+					<p>
+						Я опытный <em>Front-End</em> Разработчик с большим опытом работы в
+						создании интерактивных веб-приложений и владею современными
+						технологиями, такими как
+						<strong>HTML5, CSS3, JavaScript и Vue</strong>.
+					</p>
 
-		<p>
-			Я опытный <em>Front-End</em> Разработчик с большим опытом работы в
-			создании интерактивных веб-приложений и владею современными технологиями,
-			такими как <strong>HTML5, CSS3, JavaScript и Vue</strong>.
-		</p>
+					<h3>Список социальных сетей:</h3>
 
-		<h3>Список социальных сетей:</h3>
-
-		<p>
-			<a
-				href="https://www.instagram.com/eralieff/"
-				target="_blank"
-				rel="noopener noreferrer"
-				>Instagram</a
-			>
-			|
-			<a
-				href="https://t.me/salemqalaisynn"
-				target="_blank"
-				rel="noopener noreferrer"
-				>Telegram</a
-			>
-			|
-			<a
-				href="https://www.linkedin.com/in/eralieff"
-				target="_blank"
-				rel="noopener noreferrer"
-				>LinkedIn</a
-			>
-		</p>
-
-		<h3>Мои хобби:</h3>
-
-		<ul>
-			<li>Музыка</li>
-			<li>Книга</li>
-			<li>Монтаж</li>
-		</ul>
-
-		<h3>Опыт работы:</h3>
-
-		<table>
-			<thead>
-				<tr>
-					<th>Название</th>
-					<th>Должность</th>
-					<th>Год</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>CodeCraft Solutions</td>
-					<td>Back-end developer</td>
-					<td>2019-2020</td>
-				</tr>
-				<tr>
-					<td>RB-K</td>
-					<td>Network Engineer</td>
-					<td>2021-2022</td>
-				</tr>
-				<tr>
-					<td>TechNest Innovations</td>
-					<td>Front-end developer</td>
-					<td>2022-2023</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<h3>Связаться со мной:</h3>
-		<form action="#">
-			<div>
-				<label for="firstName">Ваше имя:</label>
-				<input type="text" id="firstName" placeholder="Введите имя" />
-			</div>
-			<div>
-				<label for="email">Ваш email:</label>
-				<input type="email" id="email" placeholder="Введите email" />
-			</div>
-			<div>
-				<label for="message">Ваше сообщение:</label>
-				<div>
-					<textarea
-						id="message"
-						placeholder="Ваше сообщение..."
-						rows="5"
-					></textarea>
+					<p>
+						<a
+							href="https://www.instagram.com/eralieff/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="link"
+							>Instagram</a
+						>
+						|
+						<a
+							href="https://t.me/salemqalaisynn"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="link"
+							>Telegram</a
+						>
+						|
+						<a
+							href="https://www.linkedin.com/in/eralieff"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="link"
+							>LinkedIn</a
+						>
+					</p>
 				</div>
 			</div>
-			<button type="submit">Отправить!</button>
-		</form>
+
+			<div class="card card__my-hobbies">
+				<h3>Мои хобби:</h3>
+
+				<div class="list">
+					<ul>
+						<li><i class="fa-solid fa-music"></i>Музыка</li>
+						<li><i class="fa-solid fa-book"></i>Книга</li>
+						<li><i class="fa-solid fa-camera"></i>Монтаж</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="card card__work-experience">
+				<h3>Опыт работы:</h3>
+
+				<table class="table">
+					<!-- <thead>
+						<tr>
+							<th>Название</th>
+							<th>Должность</th>
+							<th>Год</th>
+						</tr>
+					</thead> -->
+					<tbody>
+						<tr>
+							<td>CodeCraft Solutions</td>
+							<td>Back-end developer</td>
+							<td>2019-2020</td>
+						</tr>
+						<tr>
+							<td>RB-K</td>
+							<td>Network Engineer</td>
+							<td>2021-2022</td>
+						</tr>
+						<tr>
+							<td>TechNest Innovations</td>
+							<td>Front-end developer</td>
+							<td>2022-2023</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h3>Связаться со мной:</h3>
+			<form action="#">
+				<div>
+					<label for="firstName">Ваше имя:</label>
+					<input type="text" id="firstName" placeholder="Введите имя" />
+				</div>
+				<div>
+					<label for="email">Ваш email:</label>
+					<input type="email" id="email" placeholder="Введите email" />
+				</div>
+				<div>
+					<label for="message">Ваше сообщение:</label>
+					<div>
+						<textarea
+							id="message"
+							placeholder="Ваше сообщение..."
+							rows="5"
+						></textarea>
+					</div>
+				</div>
+				<button class="btn" type="submit">Отправить!</button>
+			</form>
+		</div>
 	</body>
 </html>
